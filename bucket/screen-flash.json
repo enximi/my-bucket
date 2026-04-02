@@ -2,7 +2,7 @@
     "version": "0.1.1",
     "description": "A Windows screen flash library and CLI.",
     "homepage": "https://github.com/enximi/screen-flash",
-    "license": "MIT OR Apache-2.0",
+    "license": "MIT|Apache-2.0",
     "notes": "Windows only.",
     "architecture": {
         "64bit": {
@@ -17,7 +17,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/enximi/screen-flash/releases/download/v$version/screen-flash-v$version-x86_64-pc-windows-msvc.zip"
+                "url": "https://github.com/enximi/screen-flash/releases/download/v$version/screen-flash-v$version-x86_64-pc-windows-msvc.zip",
+                "hash": {
+                    "mode": "json",
+                    "url": "https://api.github.com/repos/enximi/screen-flash/releases/tags/v$version",
+                    "jsonpath": "$.assets[?(@.name=='$basename')].digest",
+                    "find": "sha256:([a-fA-F\\d]{64})"
+                }
             }
         }
     }
