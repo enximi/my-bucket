@@ -1,7 +1,7 @@
-# my-bucket
+# enximi-bucket
 
-[![Tests](https://github.com/enximi/my-bucket/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/enximi/my-bucket/actions/workflows/ci.yml)
-[![Excavator](https://github.com/enximi/my-bucket/actions/workflows/excavator.yml/badge.svg?branch=main)](https://github.com/enximi/my-bucket/actions/workflows/excavator.yml)
+[![Tests](https://github.com/enximi/enximi-bucket/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/enximi/enximi-bucket/actions/workflows/ci.yml)
+[![Excavator](https://github.com/enximi/enximi-bucket/actions/workflows/excavator.yml/badge.svg?branch=main)](https://github.com/enximi/enximi-bucket/actions/workflows/excavator.yml)
 
 Personal [Scoop](https://scoop.sh) bucket for packages published by `enximi`.
 
@@ -12,8 +12,8 @@ Personal [Scoop](https://scoop.sh) bucket for packages published by `enximi`.
 ## Usage
 
 ```powershell
-scoop bucket add my-bucket https://github.com/enximi/my-bucket
-scoop install my-bucket/screen-flash
+scoop bucket add enximi-bucket https://github.com/enximi/enximi-bucket
+scoop install enximi-bucket/screen-flash
 ```
 
 ## Updating

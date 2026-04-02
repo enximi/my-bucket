@@ -1,6 +1,6 @@
 param(
     # overwrite upstream param
-    [String]$upstream = "enximi/my-bucket:main"
+    [String]$upstream = "enximi/enximi-bucket:main"
 )
 
 if (!$env:SCOOP_HOME) { $env:SCOOP_HOME = Convert-Path (scoop prefix scoop) }
